@@ -1,0 +1,131 @@
+/* styles/w06-finalproject.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set up basic styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .temples-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .characters-container {
+    display: grid;
+    grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+    max-width:100%;
+    gap:8px;
+  }
+
+  .character-card {
+    padding:10px;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 0 3px 1px rgba(0,0,0,0.3);
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    main {
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  
+    h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    select {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    #temples {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .temples-card {
+      padding: 10px;
+    }
+  }
+
+  /* DESKTOP */
+  @media only screen and (min-width: 768px) {
+      .characters-container {
+    display: grid;
+    grid-template-columns: minmax(25%, 1fr) minmax(25%, 1fr) minmax(25%, 1fr) minmax(25%, 1fr);
+    max-width:100%;
+    gap:8px;
+  }
+  }
+  

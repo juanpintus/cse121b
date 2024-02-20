@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lord of the Rings Characters</title>
+  <link rel="stylesheet" href="w06-finalproject.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../w01-task.html">W1 Task</a></li>
+        <li><a href="../w03-task.html">W3 Task</a></li>
+        <li><a href="../w04-task.html">W4 Task</a></li>
+        <li><a href="../w05-task.html">W5 Task</a></li>
+        <li><a href="w06-finalproject.html">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>The Lord of the Rings Characters</h1>
+    <h2>Explore Characters from Middle-earth</h2>
+
+    <label for="raceFilter">Filter characters</label>
+    <select id="raceFilter" title="Choose a data filter.">
+      <option value="" selected>All</option>
+      <option value="human">Humans</option>
+      <option value="elf">Elves</option>
+      <option value="dwarf">Dwarves</option>
+      <option value="hobbit">Hobbits</option>
+      <option value="maiar">Maiar</option>
+      <option value="orc">Orcs</option>
+    </select>
+
+    <div id="characters" class="characters-container">
+      <!-- Character cards will be dynamically generated here -->
+    </div>
+  </main>
+
+  <footer>
+    &copy;<span id="year"></span> | The Lord of the Rings Characters | CSE 121b
+  </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+</body>
+<script src="w06-finalproject.js"></script>
+
+</html>
